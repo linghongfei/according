@@ -17,12 +17,11 @@
 					var num=pa.children(":header").index($(this));
 					
 					//alert(num)
-					if(num==opt.start){return}
+					if($(this).hasClass("active")){return}
 					pa.children("div:visible").slideUp();
 					pa.children("div").eq(num).slideDown();
 					pa.children(":header.active").removeClass("active");
 					pa.children(":header").eq(num).addClass("active");
-					opt.start=num;
 				})
 			})
 		}
