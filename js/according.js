@@ -9,8 +9,8 @@
 				//alert(oldnum)
 			function init(){
 				pa.children("div").hide();
-				pa.children("div").eq(option.start).show();
-				pa.children(":header").eq(option.start).addClass("active");
+				pa.children("div").eq(option.start||DEFAULT).show();
+				pa.children(":header").eq(option.start||DEFAULT).addClass("active");
 			}
 			pa.children(":header").each(function(){
 				$(this).click(function(){
